@@ -1,5 +1,15 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Pretendard JP", Pretendard, 
+	  -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", 
+	  "Noto Sans KR", 
+	  "Noto Sans JP", "Noto Sans TC", "Noto Sans SC", "Noto Sans HK", 
+	  "PlangothicP1", "PlangothicP2", // Rare CJK fallback font
+	  "NanumBarunGothic", Roboto, "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif, emoji;
   line-height: 1.5;
   font-weight: 400;
 
