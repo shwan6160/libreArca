@@ -21,7 +21,7 @@
   min-height: 100vh;  
   grid-template-areas: 
     "header header header"
-    "left-sidebar main right-sidebar"
+    "l-side main r-side"
     "footer footer footer";
 }
 
@@ -45,10 +45,10 @@ header {
 
 
 div.left-sidebar {
-  grid-area: left-sidebar;
+  grid-area: l-side;
 }
 div.right-sidebar {
-  grid-area: right-sidebar;
+  grid-area: r-side;
 }
 main {
   grid-area: main;
