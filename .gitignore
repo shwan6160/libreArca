@@ -8,6 +8,7 @@
 # test
 *.out
 *.test
+test
 
 # Go module
 vendor/

@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: #f7f2e9;
+  color: #2b2620;
+}
+
+#app {
+  min-height: 100vh;
+}

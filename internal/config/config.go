@@ -9,6 +9,7 @@ import (
 type Config struct {
 	WikiName string `yaml:"wiki_name"`
 	BbsName  string `yaml:"bbs_name"`
+	Skin     string `yaml:"skin"`
 }
 
 func (c *Config) UnmarshalYAML(value *yaml.Node) error {
@@ -20,6 +21,9 @@ func (c *Config) UnmarshalYAML(value *yaml.Node) error {
 	*c = Config(raw)
 	if c.BbsName == "" {
 		c.BbsName = c.WikiName
+	}
+	if c.Skin == "" {
+		c.Skin = "default"
 	}
 	return nil
 }
