@@ -3,6 +3,7 @@
   import Home from './pages/Home.svelte'
   import Wiki from './pages/Wiki.svelte'
   import Bbs from './pages/Bbs.svelte'
+  import Blog from './pages/Blog.svelte'
 
   export let url: string = '';
 
@@ -10,6 +11,7 @@
     '/': Home,
     '/w/:slug': Wiki,
     '/b/*': Bbs,
+    '/g/:slug': Blog
   }
 </script>
 
@@ -23,6 +25,7 @@
     <a href="/">Home</a>
     <a href="/w/FrontPage">FrontPage</a>
     <a href="/b">Board</a>
+    <a href="/g/FirstBlogPost">Blog</a>
   </nav>
 </header>
 
@@ -34,6 +37,9 @@
     </Route>
     <Route path="/b/*" let:params>
       <Bbs path={params['*']} />
+    </Route>
+    <Route path="/g/:slug" let:params>
+      <Blog slug={params.slug} />
     </Route>
   </Router>
 </main>
