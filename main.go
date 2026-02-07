@@ -98,11 +98,6 @@ func main() {
 
 func RootHandler(layoutPath string, data layoutData) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		if r.URL.Path != "/" {
-			http.NotFound(w, r)
-			return
-		}
-
 		tmpl, err := template.ParseFiles(layoutPath)
 		if err != nil {
 			http.Error(w, "layout missing", http.StatusInternalServerError)
